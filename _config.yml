@@ -28,15 +28,15 @@ exclude:
   - not-pure-poole.gemspec
 
 # Optimize Jekyl SEO Tag
-#twitter:
-  #username: vszhub
-  #card: summary
+twitter:
+  username: vszhub
+  card: summary
 logo: logo.png
 social:
-  name: DaCaiGouX
+  name: Songzi Vong
   links:
-    - https://twitter.com/
-    - https://github.com/dacaigoux
+    - https://twitter.com/vszhub
+    - https://github.com/vszhub
 google_site_verification: xxxxx
 lang: en
 
@@ -54,6 +54,6 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: DaCaiGouX
-  url: https://github.com/dacaigoux/
-  email: xiaoweixue@outlook.com
+  name: Songzi Vong
+  url: https://github.com/vszhub/
+  email: vszhub@gmail.com
