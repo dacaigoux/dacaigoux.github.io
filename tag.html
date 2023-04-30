@@ -2,6 +2,7 @@
 layout: default
 title: Tags
 ---
+<a href="{{ "/" | relative_url }}">{{ site.theme_config.back_home_text }}</a>
 
 {% for tag in site.tags %}
   <h2>{{ tag[0] }}</h2>
