@@ -8,3 +8,51 @@ layout: default
 {% include date_and_social_share.html %}
 
 {{ content }}
+
+
+<button id="myBtn">Back to Top</button>
+
+<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  transition: opacity 0.2s ease-in-out;
+
+}
+
+#myBtn:hover {
+  background-color: black;
+}
+</style>
+
+<script>
+    // 获取“返回顶部”按钮元素
+    var backToTopButton = document.querySelector('#myBtn');
+
+
+    // 当用户滚动窗口时，更新按钮的可见性
+    window.addEventListener('scroll', function () {
+    if (window.pageYOffset > 100) {
+        backToTopButton.classList.add('show');
+    } else {
+        backToTopButton.classList.remove('show');
+    }
+    });
+
+    // 当用户单击按钮时，滚动回顶部
+    backToTopButton.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
